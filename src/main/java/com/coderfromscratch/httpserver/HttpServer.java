@@ -20,7 +20,6 @@ public class HttpServer {
         Configuration conf = ConfigurationManager.getInstance().getCurrentConfiguration();
         System.out.println("Using Port: " + conf.getPort());
         System.out.println("Using Webroot: " + conf.getWebroot());
-        System.out.println("Test!");
         try {
             ServerSocket serverSocket = new ServerSocket(conf.getPort());
             Socket socket = serverSocket.accept();
